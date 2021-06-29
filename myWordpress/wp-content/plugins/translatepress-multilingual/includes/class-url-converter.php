@@ -551,7 +551,7 @@ class TRP_Url_Converter {
         }
         if ( apply_filters('trp_adjust_absolute_home_https_based_on_server_variable', true) ) {
             // always return absolute_home based on the http or https version of the current page request. This means no more redirects.
-            if ( !empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] != 'off' ) {
+            if ( !empty( $_SERVER['HTTPS'] ) && strtolower($_SERVER['HTTPS']) != 'off' ) {
                 $this->absolute_home = str_replace( 'http://', 'https://', $this->absolute_home );
             } else {
                 $this->absolute_home = str_replace( 'https://', 'http://', $this->absolute_home );

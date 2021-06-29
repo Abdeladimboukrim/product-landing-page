@@ -277,27 +277,27 @@ msgstr ""
 msgid "DeepL"
 msgstr ""
 
-#: includes/class-machine-translation-tab.php:148
+#: includes/class-machine-translation-tab.php:154
 msgid "Unsupported languages"
 msgstr ""
 
-#: includes/class-machine-translation-tab.php:159
+#: includes/class-machine-translation-tab.php:165
 msgid "Recheck supported languages"
 msgstr ""
 
-#: includes/class-machine-translation-tab.php:160
+#: includes/class-machine-translation-tab.php:166
 msgid "(last checked on %s)"
 msgstr ""
 
-#: includes/class-machine-translation-tab.php:162
+#: includes/class-machine-translation-tab.php:168
 msgid "The selected automatic translation engine does not provide support for these languages.<br>You can still manually translate pages in these languages using the Translation Editor."
 msgstr ""
 
-#: includes/class-machine-translator.php:129
+#: includes/class-machine-translator.php:135
 msgid "Please enter your Google Translate key."
 msgstr ""
 
-#: includes/class-machine-translator.php:144
+#: includes/class-machine-translator.php:150
 msgid "Please enter your DeepL API key."
 msgstr ""
 
@@ -1335,23 +1335,19 @@ msgid "ISO code"
 msgstr ""
 
 #: includes/advanced-settings/custom-language.php:25
-msgid "URL slug"
-msgstr ""
-
-#: includes/advanced-settings/custom-language.php:26
 msgid "Flag URL"
 msgstr ""
 
-#: includes/advanced-settings/custom-language.php:27
+#: includes/advanced-settings/custom-language.php:26
 msgid "Text RTL"
 msgstr ""
 
-#: includes/advanced-settings/custom-language.php:30, includes/advanced-settings/separators.php:49
+#: includes/advanced-settings/custom-language.php:29, includes/advanced-settings/separators.php:49
 msgid "Custom language"
 msgstr ""
 
-#: includes/advanced-settings/custom-language.php:31
-msgid "Adds custom languages to TranslatePress.<br>Will be available under General settings, All Languages list.<br>For custom flag, first upload the image in media library then paste the URL.<br>Changing or deleting a custom language will impact translations and site URL's."
+#: includes/advanced-settings/custom-language.php:30
+msgid "Adds custom languages to TranslatePress.<br>Will be available under General settings, All Languages list, where the URL slug can also be edited.<br>For custom flag, first upload the image in media library then paste the URL.<br>Changing or deleting a custom language will impact translations and site URL's.<br> The ISO code will be used for automatic translation if supported."
 msgstr ""
 
 #: includes/advanced-settings/disable-dynamic-translation.php:8
@@ -1399,7 +1395,7 @@ msgid "Automatically translate slugs"
 msgstr ""
 
 #: includes/advanced-settings/enable-auto-translate-slug.php:9
-msgid "Generate automatic translations of slugs for posts, pages and Custom Post Types.<br/>Requires <a href=\"https://translatepress.com/docs/addons/seo-pack/\" title=\"TranslatePress Add-on SEO Pack documentation\" target=\"_blank\"> SEO Pack Add-on</a> to be installed and activated."
+msgid "Generate automatic translations of slugs for posts, pages and Custom Post Types.<br/>Requires <a href=\"https://translatepress.com/docs/addons/seo-pack/\" title=\"TranslatePress Add-on SEO Pack documentation\" target=\"_blank\"> SEO Pack Add-on</a> to be installed and activated.<br>The slugs will be automatically translated starting with the second refresh of each page."
 msgstr ""
 
 #: includes/advanced-settings/enable-hreflang-xdefault.php:8

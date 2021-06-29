@@ -328,11 +328,10 @@
 <?php __("Language name", "translatepress-multilingual"); ?>
 <?php __("Native name", "translatepress-multilingual"); ?>
 <?php __("ISO code", "translatepress-multilingual"); ?>
-<?php __("URL slug", "translatepress-multilingual"); ?>
 <?php __("Flag URL", "translatepress-multilingual"); ?>
 <?php __("Text RTL", "translatepress-multilingual"); ?>
 <?php __("Custom language", "translatepress-multilingual"); ?>
-<?php __("Adds custom languages to TranslatePress.<br>Will be available under General settings, All Languages list.<br>For custom flag, first upload the image in media library then paste the URL.<br>Changing or deleting a custom language will impact translations and site URL's.", "translatepress-multilingual"); ?>
+<?php __("Adds custom languages to TranslatePress.<br>Will be available under General settings, All Languages list, where the URL slug can also be edited.<br>For custom flag, first upload the image in media library then paste the URL.<br>Changing or deleting a custom language will impact translations and site URL's.<br> The ISO code will be used for automatic translation if supported.", "translatepress-multilingual"); ?>
 <?php __("Disable dynamic translation", "translatepress-multilingual"); ?>
 <?php __("It disables detection of strings displayed dynamically using JavaScript. <br/>Strings loaded via a server side AJAX call will still be translated.", "translatepress-multilingual"); ?>
 <?php __("Exclude translated links from sitemap", "translatepress-multilingual"); ?>
@@ -344,7 +343,7 @@
 <?php __("Do not translate certain paths", "translatepress-multilingual"); ?>
 <?php __("Choose what paths can be translated. Supports wildcard at the end of the path.<br>For example, to exclude https://example.com/some/path you can either use the rule /some/path/ or /some/*.<br>Enter each rule on it's own line. To exclude the home page use {{home}}.", "translatepress-multilingual"); ?>
 <?php __("Automatically translate slugs", "translatepress-multilingual"); ?>
-<?php __("Generate automatic translations of slugs for posts, pages and Custom Post Types.<br/>Requires <a href=\"https://translatepress.com/docs/addons/seo-pack/\" title=\"TranslatePress Add-on SEO Pack documentation\" target=\"_blank\"> SEO Pack Add-on</a> to be installed and activated.", "translatepress-multilingual"); ?>
+<?php __("Generate automatic translations of slugs for posts, pages and Custom Post Types.<br/>Requires <a href=\"https://translatepress.com/docs/addons/seo-pack/\" title=\"TranslatePress Add-on SEO Pack documentation\" target=\"_blank\"> SEO Pack Add-on</a> to be installed and activated.<br>The slugs will be automatically translated starting with the second refresh of each page.", "translatepress-multilingual"); ?>
 <?php __("Enable the hreflang x-default tag for language:", "translatepress-multilingual"); ?>
 <?php __("Enables the hreflang=\"x-default\" for an entire language. See documentation for more details.", "translatepress-multilingual"); ?>
 <?php __("Translate numbers and numerals", "translatepress-multilingual"); ?>

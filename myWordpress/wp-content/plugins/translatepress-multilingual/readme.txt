@@ -5,7 +5,7 @@ Tags: translate, translation, multilingual, automatic translation, bilingual, fr
 Requires at least: 3.1.0
 Tested up to: 5.7.2
 Requires PHP: 5.6.20
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -139,6 +139,15 @@ For more information please check out our [documentation](https://translatepress
 
 
 == Changelog ==
+= 2.0.4 =
+* Added support for translating aria-label attribute
+* Added possibility to exclude entire gettext domain from translation
+* Improved determining http/https when building links
+* Fixed automatic translation for custom languages
+* Added missing Swahili flag
+* Fixed flag for Tagalog language
+* Fixed some PHP notices and warnings
+
 = 2.0.3 =
 * Added compatibility with PHP 8
 * Added compatibility with Profile Builder Content Restriction redirect URL

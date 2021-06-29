@@ -12,6 +12,7 @@ class TRP_Machine_Translator {
 	protected $machine_translator_logger;
 	protected $machine_translation_codes;
 	protected $trp_languages;
+    protected $correct_api_key = null;
     /**
      * TRP_Machine_Translator constructor.
      *
@@ -119,6 +120,11 @@ class TRP_Machine_Translator {
      * @return array [ (string) $message, (bool) $error ].
      */
     public function automatic_translate_error_check( $machine_translator, $translation_engine, $api_key ) {
+
+        if ($this->correct_api_key!=null){
+            return $this->correct_api_key;
+        }
+
         $is_error       = false;
         $return_message = '';
 
@@ -156,11 +162,31 @@ class TRP_Machine_Translator {
             default:
                 break;
         }
-        return array(
+
+
+        $this->correct_api_key=array(
             'message' => $return_message,
             'error'   => $is_error,
         );
+
+        return $this->correct_api_key;
     }
+
+    // checking if the api_key is correct in order to display unsupported languages
+
+    public function is_correct_api_key(){
+
+        $machine_translator = $this;
+        $translation_engine = $this->settings['trp_machine_translation_settings']['translation-engine'];
+        $api_key = $this->get_api_key();
+
+        $verification = $this->automatic_translate_error_check( $machine_translator, $translation_engine, $api_key );
+        if($verification['error']== false) {
+            return true;
+        }
+        return false;
+    }
+
 
 	/**
 	 * Return site referer
